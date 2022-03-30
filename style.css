@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+}
+
+.container {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: #332cff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 -7px #332cff, 0 0 0 -7px #332cff, 0 0 0 -15px #332cff,
+    0 0 0 -15px #332cff;
+  animation: split 2.4s forwards infinite;
+}
+
+@keyframes split {
+  25% {
+    box-shadow: 0 0 0 -7px #332cff, 0 0 0 -7px #332cff, 0 0 0 -15px #332cff,
+      0 0 0 -15px #332cff;
+  }
+  50% {
+    box-shadow: 90px 0 0 -7px #332cff, -90px 0 0 -7px #332cff,
+      180px 0 0 -15px #332cff, -180px 0 0 -15px #332cff;
+  }
+  75% {
+    box-shadow: 90px 0 0 -7px #332cff, -90px 0 0 -7px #332cff,
+      180px 0 0 -15px #332cff, -180px 0 0 -15px #332cff;
+  }
+  100% {
+    box-shadow: 0 0 0 -7px #332cff, 0 0 0 -7px #332cff, 0 0 0 -15px #332cff,
+      0 0 0 -15px #332cff;
+  }
+}
